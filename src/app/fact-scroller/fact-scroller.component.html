@@ -1,12 +1,4 @@
-<mat-toolbar color="primary">
-  <span>Card view demo</span>
-  <button mat-button (click)="toggleGridColumns()" fxHide.lt-md>
-    <span *ngIf="gridColumns === 4">Three Columns</span>
-    <span *ngIf="gridColumns === 3">Four Columns</span>
-  </button>
-</mat-toolbar>
-<div class="content">
-  <cdk-virtual-scroll-viewport
+<cdk-virtual-scroll-viewport
     fxLayout="row wrap"
     fxLayoutGap="16px grid"
     itemSize="400"
@@ -31,5 +23,4 @@
       </mat-card-actions>
     </mat-card>
   </cdk-virtual-scroll-viewport>
-</div>
 
